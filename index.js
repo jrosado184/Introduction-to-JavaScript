@@ -135,32 +135,26 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(weight, age) {
- if(age <1 ){
-   if(age < 0.48){
-     return weight  * 0.1;
-   } else if(age < 0.84){
-     return weight * 0.05;
-   }else if(age > 0.58){
-     return weight * 0.05;
-   }
-  } else{
-
-   if(weight < 6){
-     console.log('under 6')
-     return weight * 0.05;
-   }else if(weight < 11){
-     console.log('under 11')
-     return weight * 0.04;
- }else if(weight <= 15){
-   console.log('under 15')
-   return weight * 0.03;
- } else{
-   console.log('default')
-   return weight * 0.02;
-   }
-  }
+function hungryDog(weight, age){
+if(age >= 1 && weight <= 5) {
+  return weight * 0.05;
+}else if(age >= 1 && weight >= 6 && weight <=10) {
+  return weight * 0.04;
+}else if(age >= 1 && weight >=11 && weight <= 15) {
+  return weight * 0.03;
+}else if(age >= 1 && weight > 15){
+  return weight * 0.02;  
+}else if(age < 1 && age >= 0.583) {
+  return weight * 0.04;
+}else if(age < 0.583 && age >= 0.333 ) {
+  return weight * 0.05
+}else if(age <  0.333){
+  return weight * 0.10;
+}else{
+  return "try again"
 }
+console.log(hungryDog(0.04, 0.583));
+
 
 
 
@@ -255,7 +249,7 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(number){
  if(number === 5){
-   return "{5} bottles of soda on the wall, {4} bottles of soda, take one down pass it around {3}bottles of soda on the wall."
+   return "5 bottles of soda on the wall, 5 bottles of soda, take one down pass it around 4 bottles of soda on the wall"
  }else if(number === 4){
 return "{4} bottles of soda, take one down pass it around {3}bottles of soda on the wall"
 }else if(number === 3){
