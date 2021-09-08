@@ -153,6 +153,9 @@ if(age >= 1 && weight <= 5) {
 }else{
   return "try again"
 }
+}
+
+
 console.log(hungryDog(0.04, 0.583));
 
 
@@ -212,7 +215,7 @@ console.log(game("scissors", "rock"));
 /*
 Using the miles function below do the following:
 1. Receive a number of kilometers
-2. Convert the number of kiolmeters received to miles
+2. Convert the number of kilometers received to miles
 3. Return the number of miles
 */
 
@@ -287,12 +290,7 @@ return "you got a D"
 return "you got an F"
 }
 }
-
-
-
-
-
-console.log(grade(70));
+console.log(grade(75));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -332,3 +330,4 @@ module.exports = {
   annoyingSong,
   grade
 }
+
