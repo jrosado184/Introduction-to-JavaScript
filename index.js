@@ -20,9 +20,10 @@ Do the following:
    HINT: no function required
 */
 const votingAge = 18;
+(votingAge >= 18)
 
-votingAge >= 18
-console.log(true);
+console.log(votingAge);
+
 
 
 
